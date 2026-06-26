@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VĂN MINH HUY - Senior Mobile Developer | Full Project Portfolio</title>
+    <meta name="description" content="Văn Minh Huy - Senior Mobile Developer with an extensive portfolio of 9+ production applications.">
+    <meta name="keywords" content="Mobile Developer, Flutter, React Native, Portfolio, Senior Engineer">
+    <meta name="author" content="Văn Minh Huy">
+    
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Loading Overlay -->
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav class="nav-bar">
+        <div class="nav-content">
+            
+            <div class="nav-links">
+                <a href="#summary">Summary</a>
+                <a href="#skills">Skills</a>
+                <a href="#experience">Experience</a>
+                <a href="#projects">Projects</a>
+                <a href="#education">Education</a>
+            </div>
+            <div class="nav-actions">
+                <button class="btn btn-primary" onclick="window.print()">
+                    <span>📄</span> Download PDF
+                </button>
+                <button class="btn-icon" id="themeToggle" title="Toggle dark mode">
+                    <span id="themeIcon">🌙</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="resume-container">
+            
+            <header class="header">
+                <div class="header-content">
+                    <h1>VĂN MINH HUY</h1>
+                    <div class="subtitle">Senior Mobile Developer | Full Project Portfolio</div>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <span>📧</span>
+                            <a href="mailto:vanhuy2710@gmail.com">vanhuy2710@gmail.com</a>
+                        </div>
+                        <div class="contact-item">
+                            <span>📱</span>
+                            <span>(+84) 354 726 583</span>
+                        </div>
+                        <div class="contact-item">
+                            <span>💻</span>
+                            <a href="https://github.com/Hvanw" target="_blank">github.com/Hvanw</a>
+                        </div>
+                        <div class="contact-item">
+                            <span>🌐</span>
+                            <a href="https://hvanw.github.io/dotfiles" target="_blank">Portfolio</a>
+                        </div>
+                        <div class="contact-item">
+                            <span>📍</span>
+                            <span>Ho Chi Minh City, Vietnam</span>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Main Content -->
+            <div class="content">
+                <section id="summary" class="animate-in">
+                    <h2>Professional Summary</h2>
+                    <div class="summary">
+                        <p>Versatile <strong>Fullstack Software Engineer</strong> with over <strong>4 years</strong> of comprehensive software development experience, currently specializing in <strong>full-stack web development, AI/ML integration, and DevOps automation</strong> as a freelance developer. Strong background in <strong>mobile development</strong> (Flutter, React Native, Kotlin, SwiftUI) with <strong>3.5 years leading a mobile team of 8 developers</strong>. Proficient across the entire technology stack: <strong>React/Next.js</strong> on frontend, <strong>FastAPI, NestJS, Golang, Spring Boot</strong> on backend, with expertise in <strong>AI/LLM integration (ChatGPT, Claude, Gemini APIs)</strong>. Passionate about <strong>DevOps practices, CI/CD automation</strong>, and building <strong>custom tooling</strong> using multiple programming languages (Dart, Python, Bash, Rust, JavaScript, C/C++). Experienced in delivering <strong>SaaS applications, e-commerce platforms, AI-powered tools, internal dashboards, and API services</strong>. Additional experience in brand identity design for holistic product development.</p>
+                    </div>
+                </section>
+
+                <section id="skills" class="animate-in">
+                    <h2>Technical Skills</h2>
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <h3>🌐 Frontend Development</h3>
+                            <p><strong>Web:</strong> React, Next.js, HTML5, CSS3, Tailwind CSS, Responsive Design</p>
+                            <p><strong>Mobile:</strong> Flutter (BLoC, Riverpod), React Native, SwiftUI, Kotlin (Jetpack Compose), Xamarin (C#)</p>
+                        </div>
+                        <div class="skill-card">
+                            <h3>⚙️ Backend Development</h3>
+                            <p><strong>Languages & Frameworks:</strong> Python (FastAPI, Flask), Node.js (NestJS, Express), Golang, Java (Spring Boot)</p>
+                            <p><strong>Architecture:</strong> RESTful APIs, Microservices, Clean Architecture, MVVM, **Supabase**, **Authentication (OAuth 2.0, JWT)**</p>
+                            <p><strong>Databases:</strong> MySQL, PostgreSQL, MongoDB, Firebase, **FAISS (Vector Search)**</p>
+                        </div>
+                        <div class="skill-card">
+                            <h3>🤖 AI & Machine Learning</h3>
+                            <p><strong>LLM Integration:</strong> ChatGPT API, Claude API, Gemini API</p>
+                            <p><strong>AI Applications:</strong> Prompt engineering, AI-powered chatbots, intelligent assistants, context-aware AI features</p>
+                            <p><strong>ML Tools:</strong> TensorFlow integration, model deployment</p>
+                        </div>
+                        <div class="skill-card">
+                            <h3>🚀 DevOps & Infrastructure</h3>
+                            <p><strong>CI/CD:</strong> Fastlane, GitHub Actions, GitLab CI, automated deployment pipelines</p>
+                            <p><strong>Containerization:</strong> Docker, container orchestration</p>
+                            <p><strong>Cloud Platforms:</strong> AWS (EC2, S3, Lambda, RDS), Firebase</p>
+                            <p><strong>Automation:</strong> Bash scripting, Python automation, Dart scripts, deployment automation</p>
+                        </div>
+                        <div class="skill-card">
+                            <h3>🛠️ Tools & Technologies</h3>
+                            <p><strong>Version Control:</strong> Git, GitHub, GitLab</p>
+                            <p><strong>API Integration:</strong> Stripe, VNPay, MoMo, Google Maps, OAuth (Google, Apple, Facebook), Payment gateways</p>
+                            <p><strong>Other:</strong> Apache Camel, Slack Webhooks, iBeacon, NFC, ClearPass API</p>
+                            <p><strong>Design:</strong> Basic brand identity design, UI/UX awareness</p>
+                        </div>
+                        <div class="skill-card">
+                            <h3>💻 Programming Languages</h3>
+                            <p><strong>Primary:</strong> Dart, Python, JavaScript/TypeScript, Kotlin, Java, Golang</p>
+                            <p><strong>Secondary:</strong> Rust, C/C++, Bash</p>
+                            <p><strong>Scripting & Automation:</strong> Multi-language CLI tool development</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="experience" class="animate-in">
+                    <h2>Professional Experience</h2>
+                    <div class="experience-item">
+                        <div class="job-title">Fullstack Software Engineer (Freelance)</div>
+                        <div class="company-date"><em>Independent Contractor</em> | Oct 2024 - Present</div>
+                        <p>Operating in <strong>early-stage environments</strong>, collaborating closely with <strong>founders</strong> to build and launch <strong>MVPs from scratch</strong> with high ownership and speed.</p>
+                        <ul>
+                            <li><strong>Sport Seeker (AI &amp; Mobile Desktop)</strong>: Developed a Flutter Desktop application (macOS/Windows) for offline sports photo/video analysis. Integrated a Python FastAPI backend with an AI pipeline (InsightFace, PaddleOCR) for facial and BIB number recognition. Implemented modular packaging and cross-platform deployment.</li>
+                            <li><strong>The Poet Residence (Quiet Luxury Web)</strong>: Engineered the official high-end real estate website using React, TypeScript, and Tailwind CSS. Focused on &quot;Quiet Luxury&quot; aesthetic and refined UI/UX with shadcn/ui. Optimized for performance and seamless deployment on Vercel.</li>
+                            <li><strong>Confidential Apartment Management App (Mobile UI/UX)</strong>: Led the comprehensive UI/UX redesign of a Flutter-based enterprise app. Achieved a premium, high-density layout satisfying stakeholders&#39; &quot;no wasted space&quot; requirement. Designed complex flows for billing, bulletin feeds with reactions, and fee comparison analytics.</li>
+                            <li>Design and develop <strong>full-stack web applications</strong> using React/Next.js frontend and FastAPI/NestJS/Golang backends</li>
+                            <li>Build and deploy <strong>SaaS applications</strong> with scalable architectures, RESTful APIs, and database design</li>
+                            <li>Integrate <strong>AI/LLM capabilities</strong> (ChatGPT, Claude, Gemini APIs) into client applications for intelligent features</li>
+                            <li>Build <strong>API services and backend systems</strong> with comprehensive documentation and testing</li>
+                            <li>Implement <strong>DevOps practices</strong>: CI/CD pipelines, Docker containerization, cloud deployment (AWS)</li>
+                            <li>Frontend: Flutter (Desktop/Mobile), React, Next.js, Tailwind CSS, TypeScript</li>
+                            <li>Backend: FastAPI (Python), NestJS (TypeScript), Golang, <strong>Supabase</strong></li>
+                            <li>AI/ML: InsightFace, PaddleOCR, ChatGPT/Claude/Gemini APIs, <strong>Embeddings</strong>, <strong>Prompt Engineering</strong></li>
+                            <li>DevOps: Docker, AWS, GitHub Actions, Vercel</li>
+                            <li>Database: PostgreSQL, MySQL, FAISS (Vector DB)</li>
+                            <li>SaaS applications with subscription models and user management</li>
+                            <li>AI-powered chatbots and intelligent assistance tools</li>
+                            <li>E-commerce platforms with payment processing and inventory management</li>
+                            <li>Content management systems with custom workflows</li>
+                            <li>Internal business dashboards with analytics and reporting</li>
+                            <li>Microservices architectures and API development</li>
+                        </ul>
+                    </div>
+                    <div class="experience-item">
+                        <div class="job-title">Mobile Development Team Lead</div>
+                        <div class="company-date"><em>AEGONA</em> | Feb 2022 - Sep 2024</div>
+                        <p>Led a mobile development team of 8 developers, overseeing architecture, code quality, and delivery of multiple cross-platform mobile applications.</p>
+                        <ul>
+                            <li>Managed and mentored a team of 8 mobile developers, fostering technical growth and collaboration</li>
+                            <li>Established coding standards, conducted code reviews, and enforced best practices</li>
+                            <li>Coordinated sprint planning, task allocation, and delivery timelines for concurrent projects</li>
+                            <li>Successfully re-architected team&#39;s project structure, creating scalable, modular design</li>
+                            <li>Built custom automation tools and CLI utilities (Dart, Python, Bash) for team workflow optimization</li>
+                            <li>Deployed 5+ mobile applications on iOS and Android platforms</li>
+                            <li>Integrated complex third-party services: payment gateways, authentication, location services, iBeacon, NFC</li>
+                            <li>Developed CI/CD automation reducing deployment time by 70%</li>
+                            <li>Implemented AI/LLM capabilities in mobile applications</li>
+                            <li>Created team-wide automation scripts reducing repetitive tasks by 60%</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section id="projects" class="animate-in">
+                    <h2>Featured Projects</h2>
+                    
+                    <h3>Highlighted Projects (Freelance 2024-2026)</h3>
+                    <div class="projects-grid">
+                        <div class="project-card nda-project">
+                            <div class="project-title">Confidential Apartment Management App<span class="nda-badge" title="Project details restricted under NDA" style="
+        display: inline-block;
+        font-size: 11px;
+        font-weight: 600;
+        color: #92400e;
+        background: #fef3c7;
+        border: 1px solid #f59e0b;
+        border-radius: 4px;
+        padding: 1px 7px;
+        margin-left: 8px;
+        vertical-align: middle;
+        letter-spacing: 0.03em;
+      ">NDA</span></div>
+                            <div class="project-tech">Flutter</div>
+                            <div class="project-description">
+                                High-density premium UI redesign for an enterprise apartment management system. Integrated complex billing analytics and interactive community bulletins.
+                            </div>
+                        </div>
+                        <div class="project-card">
+                            <div class="project-title">Sport Seeker</div>
+                            <div class="project-tech">Flutter Desktop, Python AI</div>
+                            <div class="project-description">
+                                Cross-platform desktop app for sports event management using offline AI facial/BIB recognition.
+                            </div>
+                        </div>
+                    </div>
+                    <h3 style="margin-top: 40px;">Production Applications (AEGONA 2022-2024)</h3>
+                    <div class="projects-grid">
+                        <div class="project-card">
+                            <div class="project-title">Community Engagement - MAGIQ Software</div>
+                            <div class="project-tech">Xamarin, C#</div>
+                            <div class="project-description">
+                                Multi-tenant SaaS civic engagement platform for local councils across Australia and New Zealand. Features include geo-tagged infrastructure incident reporting, push notification alerts, and community news feed. Contributed to iOS build pipeline and cross-platform deployment in a production enterprise environment. **Available on iOS & Android**.
+                            </div>
+                        </div>
+                        <div class="project-card">
+                            <div class="project-title">FixME</div>
+                            <div class="project-tech">Flutter, Golang</div>
+                            <div class="project-description">
+                                Service-booking platform for home services. Advanced Google Maps integration, VNPay/MoMo payment gateways, Fastlane CI/CD pipelines. Custom Dart scripts for test automation. **Deployed on iOS & Android**.
+                            </div>
+                        </div>
+                        <div class="project-card">
+                            <div class="project-title">Pre:MIND</div>
+                            <div class="project-tech">Flutter, Django</div>
+                            <div class="project-description">
+                                Restaurant booking app with custom iBeacon implementation. Deep native iOS/Android intervention, peripheral device connectivity. Dart automation tools for device testing. **Deployed on iOS & Android**.
+                            </div>
+                        </div>
+                        <div class="project-card">
+                            <div class="project-title">Galaxy Pynt</div>
+                            <div class="project-tech">Flutter, NestJS</div>
+                            <div class="project-description">
+                                Escape room booking platform with VNPay integration. Custom bash deployment automation using App Store Connect API and Firebase CLI. **Nearing deployment**.
+                            </div>
+                        </div>
+                        <div class="project-card">
+                            <div class="project-title">NLCS - Sancro</div>
+                            <div class="project-tech">SwiftUI</div>
+                            <div class="project-description">
+                                Student verification app with ClearPass API integration. Apple School Manager deployment. Python automation for bulk provisioning. **Production use**.
+                            </div>
+                        </div>
+                        <div class="project-card">
+                            <div class="project-title">Simap</div>
+                            <div class="project-tech">Kotlin, Jetpack Compose, Java</div>
+                            <div class="project-description">
+                                Native Android app for IoT device management. MVVM architecture, high-speed barcode/NFC scanning. Kotlin automation scripts for device simulation. **Internal production use**. **Yuragi+** *(NDA)* (React Native) Music streaming application with ad integration. **Deployed on iOS & Android**.
+                            </div>
+                        </div>
+                        <div class="project-card">
+                            <div class="project-title">PTE & Tiens - Innoviera</div>
+                            <div class="project-tech">React Native</div>
+                            <div class="project-description">
+                                Insurance and MLM cross-platform applications. **Successfully deployed**.
+                            </div>
+                        </div>
+                    </div>
+                    <h3 style="margin-top: 40px;">Backend & Automation Project</h3>
+                    <div class="projects-grid">
+                        <div class="project-card">
+                            <div class="project-title">Immoshoot Crawler</div>
+                            <div class="project-tech">Kotlin, Spring Boot, Apache Camel</div>
+                            <div class="project-description">
+                                High-volume data crawling service. Dockerized, deployed on AWS with MySQL. Daily cron jobs for automated reporting via Slack webhooks. Kotlin CLI tools for monitoring.
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="achievements" class="animate-in">
+                    <h2>Key Achievements</h2>
+                    <div class="experience-item">
+                        <ul>
+                            <li><strong>Fullstack Freelance Success (2024-Present)</strong>: Delivering diverse projects including AI-powered desktop tools, luxury web platforms, and premium mobile redesigns.</li>
+                            <li><strong>AI/ML Integration Expert</strong>: Successfully integrated ChatGPT, Claude, and Gemini APIs into production applications, enhancing user experiences with intelligent features. Developed offline AI pipelines for computer vision tasks.</li>
+                            <li><strong>Mobile Team Leadership (2022-2024)</strong>: Led 8-developer team, improving productivity and code quality through mentorship and standardized practices.</li>
+                            <li><strong>Automation Champion</strong>: Developed comprehensive automation toolkit using 7+ programming languages, reducing repetitive tasks by 60% and deployment time by 70%.</li>
+                            <li><strong>Full-Stack Architecture</strong>: Successfully re-architected mobile team&#39;s project structure, enabling rapid feature development and easier onboarding.</li>
+                            <li><strong>DevOps Excellence</strong>: Implemented CI/CD pipelines, Docker containerization, and AWS deployment automation across multiple projects.</li>
+                            <li><strong>Deployed 9+ Mobile &amp; Web Applications</strong>: Shipped production apps across Flutter, React, Xamarin, and Native platforms with complex integrations.</li>
+                            <li><strong>Multi-Technology Proficiency</strong>: Demonstrated expertise across mobile (Flutter, React Native, Kotlin, SwiftUI) and full-stack web (React, Next.js, FastAPI, NestJS, Golang).</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section id="education" class="animate-in">
+                    <h2>Education</h2>
+                    <div class="education-item">
+                        <div class="degree">Mobile Development Certificate, 2021</div>
+                        <div class="institution"><em>VTC Academy</em></div>
+                    </div>
+                    <div class="education-item">
+                        <div class="degree">Bachelor of Electrical and Electronics Engineering, 2019</div>
+                        <div class="institution"><em>HCMC University of Technology (HCMUT - OISP)</em></div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- Footer -->
+            <footer class="footer">
+                <p>Last updated: February 2026 | <a href="complete-profile.md" style="color: var(--primary-color);">View complete profile (Markdown)</a></p>
+                <p>© 2025 VĂN MINH HUY. All rights reserved.</p>
+            </footer>
+        </div>
+    </div>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop">↑</button>
+
+    <script>
+        // Theme toggle
+        const themeToggle = document.getElementById('themeToggle');
+        const themeIcon = document.getElementById('themeIcon');
+        const html = document.documentElement;
+
+        const savedTheme = localStorage.getItem('theme') || 'light';
+        html.setAttribute('data-theme', savedTheme);
+        themeIcon.textContent = savedTheme === 'dark' ? '☀️' : '🌙';
+
+        themeToggle.addEventListener('click', () => {
+            const currentTheme = html.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            
+            html.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+            themeIcon.textContent = newTheme === 'dark' ? '☀️' : '🌙';
+        });
+
+        // Back to top button
+        const backToTop = document.getElementById('backToTop');
+
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTop.classList.add('visible');
+            } else {
+                backToTop.classList.remove('visible');
+            }
+        });
+
+        backToTop.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // Loading overlay
+        window.addEventListener('load', () => {
+            const overlay = document.getElementById('loadingOverlay');
+            overlay.classList.add('hidden');
+        });
+
+        // Smooth scroll for nav links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+    </script>
+</body>
+</html>

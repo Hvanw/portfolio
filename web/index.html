@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Văn Minh Huy | Professional Profiles Portal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #2563eb;
+            --bg-color: #f8fafc;
+            --card-bg: #ffffff;
+            --text-main: #1e293b;
+            --text-muted: #64748b;
+            --border-color: #e2e8f0;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .portal-container {
+            max-width: 600px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .header {
+            margin-bottom: 40px;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            letter-spacing: -0.025em;
+            margin-bottom: 8px;
+            background: linear-gradient(to right, #2563eb, #7c3aed);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .header p {
+            color: var(--text-muted);
+            font-size: 1.1rem;
+        }
+
+        .profile-grid {
+            display: grid;
+            gap: 16px;
+        }
+
+        .profile-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 20px;
+            text-decoration: none;
+            color: inherit;
+            transition: all 0.2s ease;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            text-align: left;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .profile-card:hover {
+            transform: translateY(-2px);
+            border-color: var(--primary-color);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+
+        .profile-card h3 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 4px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .profile-card p {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+        }
+
+        .badge {
+            font-size: 0.7rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            background: #dcfce7;
+            color: #166534;
+            padding: 2px 8px;
+            border-radius: 9999px;
+            margin-left: 8px;
+        }
+
+        .footer {
+            margin-top: 40px;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+
+        .footer a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        @media (max-width: 480px) {
+            .header h1 { font-size: 2rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="portal-container">
+        <div class="header">
+            <h1>Văn Minh Huy</h1>
+            <p>Software Engineer | Portfolio Portal</p>
+        </div>
+
+        <div class="profile-grid">
+            <a href="profiles/mobile/" class="profile-card">
+                <h3>📱 Mobile Developer <span class="badge">Match Optimized</span></h3>
+                <p>Tailored for high-growth mobile roles with Flutter/React Native focus.</p>
+            </a>
+
+            <a href="profiles/ai-automation/" class="profile-card">
+                <h3>🤖 AI & Automation</h3>
+                <p>Highlighting LLM integration, prompt engineering, and automation workflows.</p>
+            </a>
+
+            <a href="profiles/standard/" class="profile-card">
+                <h3>📄 Standard Professional</h3>
+                <p>Clean, formal version optimized for general software engineering roles.</p>
+            </a>
+
+            <a href="profiles/ios/" class="profile-card">
+                <h3>🍎 iOS Specialist</h3>
+                <p>Specialized version highlighting SwiftUI and Apple ecosystem expertise.</p>
+            </a>
+
+            <a href="profiles/android/" class="profile-card">
+                <h3>🤖 Android Specialist</h3>
+                <p>Focusing on Kotlin, Jetpack Compose, and hardware integration.</p>
+            </a>
+
+            <a href="profiles/full-portfolio/" class="profile-card">
+                <h3>💼 Full Portfolio</h3>
+                <p>Comprehensive overview of all production-grade projects and skills.</p>
+            </a>
+
+            <a href="profiles/xamarin/" class="profile-card">
+                <h3>🧊 Xamarin Legacy</h3>
+                <p>Specialized profile for .NET/C# mobile development roles.</p>
+            </a>
+        </div>
+
+        <div class="footer">
+            <p>Generated from <a href="complete-profile.md">Source Content</a> | Last updated: May 2026</p>
+            <p>© 2026 Văn Minh Huy. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+</html>
