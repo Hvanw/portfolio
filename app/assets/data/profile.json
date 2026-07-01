@@ -1,0 +1,440 @@
+{
+  "meta": {
+    "canonical_url": "https://hvanw.github.io",
+    "last_updated": "2026-05"
+  },
+  "person": {
+    "name": "Văn Minh Huy",
+    "default_title": "Software Engineer (Fullstack)",
+    "contact": [
+      {
+        "type": "email",
+        "icon": "📧",
+        "value": "vanhuy2710@gmail.com",
+        "link": "mailto:vanhuy2710@gmail.com"
+      },
+      {
+        "type": "phone",
+        "icon": "📱",
+        "value": "(+84) 354 726 583",
+        "link": null
+      },
+      {
+        "type": "github",
+        "icon": "💻",
+        "value": "github.com/Hvanw",
+        "link": "https://github.com/Hvanw"
+      },
+      {
+        "type": "portfolio",
+        "icon": "🌐",
+        "value": "Portfolio",
+        "link": "https://hvanw.github.io/dotfiles"
+      },
+      {
+        "type": "location",
+        "icon": "📍",
+        "value": "Ho Chi Minh City, Vietnam",
+        "link": null
+      }
+    ]
+  },
+  "summary": [
+    "Versatile **Fullstack Software Engineer** with over **4 years** of comprehensive software development experience, currently specializing in **full-stack web development, AI/ML integration, and DevOps automation** as a freelance developer. Strong background in **mobile development** (Flutter, React Native, Kotlin, SwiftUI) with **3.5 years leading a mobile team of 8 developers**. Proficient across the entire technology stack: **React/Next.js** on frontend, **FastAPI, NestJS, Golang, Spring Boot** on backend, with expertise in **AI/LLM integration (ChatGPT, Claude, Gemini APIs)**. Passionate about **DevOps practices, CI/CD automation**, and building **custom tooling** using multiple programming languages (Dart, Python, Bash, Rust, JavaScript, C/C++). Experienced in delivering **SaaS applications, e-commerce platforms, AI-powered tools, internal dashboards, and API services**. Additional experience in brand identity design for holistic product development."
+  ],
+  "education": [
+    {
+      "institution": "VTC Academy",
+      "degree": "Mobile Development Certificate",
+      "year": 2021
+    },
+    {
+      "institution": "HCMC University of Technology (HCMUT - OISP)",
+      "degree": "Bachelor of Electrical and Electronics Engineering",
+      "year": 2019
+    }
+  ],
+  "skills": [
+    {
+      "id": "frontend",
+      "title": "Frontend Development",
+      "icon": "🌐",
+      "items": [
+        {
+          "label": "Web",
+          "content": "React, Next.js, HTML5, CSS3, Tailwind CSS, Responsive Design"
+        },
+        {
+          "label": "Mobile",
+          "content": "Flutter (BLoC, Riverpod), React Native, SwiftUI, Kotlin (Jetpack Compose), Xamarin (C#)"
+        }
+      ]
+    },
+    {
+      "id": "backend",
+      "title": "Backend Development",
+      "icon": "⚙️",
+      "items": [
+        {
+          "label": "Languages & Frameworks",
+          "content": "Python (FastAPI, Flask), Node.js (NestJS, Express), Golang, Java (Spring Boot)"
+        },
+        {
+          "label": "Architecture",
+          "content": "RESTful APIs, Microservices, Clean Architecture, MVVM, **Supabase**, **Authentication (OAuth 2.0, JWT)**"
+        },
+        {
+          "label": "Databases",
+          "content": "MySQL, PostgreSQL, MongoDB, Firebase, **FAISS (Vector Search)**"
+        }
+      ]
+    },
+    {
+      "id": "ai_ml",
+      "title": "AI & Machine Learning",
+      "icon": "🤖",
+      "items": [
+        {
+          "label": "LLM Integration",
+          "content": "ChatGPT API, Claude API, Gemini API"
+        },
+        {
+          "label": "AI Applications",
+          "content": "Prompt engineering, AI-powered chatbots, intelligent assistants, context-aware AI features"
+        },
+        {
+          "label": "ML Tools",
+          "content": "TensorFlow integration, model deployment"
+        }
+      ]
+    },
+    {
+      "id": "devops",
+      "title": "DevOps & Infrastructure",
+      "icon": "🚀",
+      "items": [
+        {
+          "label": "CI/CD",
+          "content": "Fastlane, GitHub Actions, GitLab CI, automated deployment pipelines"
+        },
+        {
+          "label": "Containerization",
+          "content": "Docker, container orchestration"
+        },
+        {
+          "label": "Cloud Platforms",
+          "content": "AWS (EC2, S3, Lambda, RDS), Firebase"
+        },
+        {
+          "label": "Automation",
+          "content": "Bash scripting, Python automation, Dart scripts, deployment automation"
+        }
+      ]
+    },
+    {
+      "id": "tools",
+      "title": "Tools & Technologies",
+      "icon": "🛠️",
+      "items": [
+        {
+          "label": "Version Control",
+          "content": "Git, GitHub, GitLab"
+        },
+        {
+          "label": "API Integration",
+          "content": "Stripe, VNPay, MoMo, Google Maps, OAuth (Google, Apple, Facebook), Payment gateways"
+        },
+        {
+          "label": "Other",
+          "content": "Apache Camel, Slack Webhooks, iBeacon, NFC, ClearPass API"
+        },
+        {
+          "label": "Design",
+          "content": "Basic brand identity design, UI/UX awareness"
+        }
+      ]
+    },
+    {
+      "id": "languages",
+      "title": "Programming Languages",
+      "icon": "💻",
+      "items": [
+        {
+          "label": "Primary",
+          "content": "Dart, Python, JavaScript/TypeScript, Kotlin, Java, Golang"
+        },
+        {
+          "label": "Secondary",
+          "content": "Rust, C/C++, Bash"
+        },
+        {
+          "label": "Scripting & Automation",
+          "content": "Multi-language CLI tool development"
+        }
+      ]
+    }
+  ],
+  "experience": [
+    {
+      "id": "freelance",
+      "title": "Fullstack Software Engineer (Freelance)",
+      "company": "Independent Contractor",
+      "date_range": "Oct 2024 - Present",
+      "intro": "Operating in **early-stage environments**, collaborating closely with **founders** to build and launch **MVPs from scratch** with high ownership and speed.",
+      "sections": [
+        {
+          "heading": "Key Projects & Deliverables",
+          "bullets": [
+            "**Sport Seeker (AI & Mobile Desktop)**: Developed a Flutter Desktop application (macOS/Windows) for offline sports photo/video analysis. Integrated a Python FastAPI backend with an AI pipeline (InsightFace, PaddleOCR) for facial and BIB number recognition. Implemented modular packaging and cross-platform deployment.",
+            "**The Poet Residence (Quiet Luxury Web)**: Engineered the official high-end real estate website using React, TypeScript, and Tailwind CSS. Focused on \"Quiet Luxury\" aesthetic and refined UI/UX with shadcn/ui. Optimized for performance and seamless deployment on Vercel.",
+            "**Confidential Apartment Management App (Mobile UI/UX)**: Led the comprehensive UI/UX redesign of a Flutter-based enterprise app. Achieved a premium, high-density layout satisfying stakeholders' \"no wasted space\" requirement. Designed complex flows for billing, bulletin feeds with reactions, and fee comparison analytics.",
+            "Design and develop **full-stack web applications** using React/Next.js frontend and FastAPI/NestJS/Golang backends",
+            "Build and deploy **SaaS applications** with scalable architectures, RESTful APIs, and database design",
+            "Integrate **AI/LLM capabilities** (ChatGPT, Claude, Gemini APIs) into client applications for intelligent features",
+            "Build **API services and backend systems** with comprehensive documentation and testing",
+            "Implement **DevOps practices**: CI/CD pipelines, Docker containerization, cloud deployment (AWS)"
+          ]
+        }
+      ],
+      "technologies": [
+        {
+          "label": "Frontend",
+          "content": "Flutter (Desktop/Mobile), React, Next.js, Tailwind CSS, TypeScript"
+        },
+        {
+          "label": "Backend",
+          "content": "FastAPI (Python), NestJS (TypeScript), Golang, **Supabase**"
+        },
+        {
+          "label": "AI/ML",
+          "content": "InsightFace, PaddleOCR, ChatGPT/Claude/Gemini APIs, **Embeddings**, **Prompt Engineering**"
+        },
+        {
+          "label": "DevOps",
+          "content": "Docker, AWS, GitHub Actions, Vercel"
+        },
+        {
+          "label": "Database",
+          "content": "PostgreSQL, MySQL, FAISS (Vector DB)"
+        }
+      ],
+      "project_types": [
+        "SaaS applications with subscription models and user management",
+        "AI-powered chatbots and intelligent assistance tools",
+        "E-commerce platforms with payment processing and inventory management",
+        "Content management systems with custom workflows",
+        "Internal business dashboards with analytics and reporting",
+        "Microservices architectures and API development"
+      ]
+    },
+    {
+      "id": "aegona",
+      "title": "Mobile Development Team Lead",
+      "company": "AEGONA",
+      "date_range": "Feb 2022 - Sep 2024",
+      "intro": "Led a mobile development team of 8 developers, overseeing architecture, code quality, and delivery of multiple cross-platform mobile applications.",
+      "sections": [
+        {
+          "heading": "Leadership & Management",
+          "bullets": [
+            "Managed and mentored a team of 8 mobile developers, fostering technical growth and collaboration",
+            "Established coding standards, conducted code reviews, and enforced best practices",
+            "Coordinated sprint planning, task allocation, and delivery timelines for concurrent projects",
+            "Successfully re-architected team's project structure, creating scalable, modular design",
+            "Built custom automation tools and CLI utilities (Dart, Python, Bash) for team workflow optimization"
+          ]
+        },
+        {
+          "heading": "Technical Achievements",
+          "bullets": [
+            "Deployed 5+ mobile applications on iOS and Android platforms",
+            "Integrated complex third-party services: payment gateways, authentication, location services, iBeacon, NFC",
+            "Developed CI/CD automation reducing deployment time by 70%",
+            "Implemented AI/LLM capabilities in mobile applications",
+            "Created team-wide automation scripts reducing repetitive tasks by 60%"
+          ]
+        }
+      ],
+      "technologies": [],
+      "project_types": []
+    }
+  ],
+  "ai_automation_expertise": [
+    {
+      "title": "AI/LLM Integration",
+      "bullets": [
+        "Production experience with ChatGPT, Claude, and Gemini APIs in web and mobile applications",
+        "Prompt engineering and optimization for context-aware AI responses",
+        "Building AI-powered chat interfaces with streaming responses and efficient token management",
+        "Implementing offline fallback mechanisms and response caching for AI features",
+        "Developing intelligent assistants and recommendation systems"
+      ]
+    },
+    {
+      "title": "Custom Automation & DevOps Tooling",
+      "bullets": [
+        "**Multi-language automation scripting**: Dart, Python, Bash, Rust, C/C++, JavaScript",
+        "**Flutter/Dart automation**: Project scaffolding, code generation, build automation",
+        "**Python automation**: API testing, data migration, report generation, web scraping",
+        "**Bash scripting**: Build orchestration, environment setup, deployment pipelines",
+        "**Rust CLI tools**: High-performance file processing, code analysis utilities",
+        "**JavaScript/Node.js**: React Native project automation, npm tooling"
+      ]
+    },
+    {
+      "title": "CI/CD & Deployment Automation",
+      "bullets": [
+        "Fastlane configuration for iOS/Android automated builds",
+        "Custom bash scripts for iOS deployment (xcrun altool, App Store Connect API)",
+        "Firebase App Distribution for beta testing workflows",
+        "GitHub Actions and GitLab CI pipeline configuration",
+        "Docker containerization and AWS deployment automation",
+        "Automated monitoring and reporting (Apache Camel, Slack webhooks, cron jobs)"
+      ]
+    }
+  ],
+  "project_categories": [
+    {
+      "id": "highlighted",
+      "title": "Highlighted Projects (Freelance 2024-2026)"
+    },
+    {
+      "id": "production",
+      "title": "Production Applications (AEGONA 2022-2024)"
+    },
+    {
+      "id": "backend_automation",
+      "title": "Backend & Automation Project"
+    }
+  ],
+  "projects": [
+    {
+      "id": "confidential-apartment",
+      "category": "highlighted",
+      "title": "Confidential Apartment Management App",
+      "tech": "Flutter",
+      "description": "High-density premium UI redesign for an enterprise apartment management system. Integrated complex billing analytics and interactive community bulletins.",
+      "nda": true
+    },
+    {
+      "id": "sport-seeker",
+      "category": "highlighted",
+      "title": "Sport Seeker",
+      "tech": "Flutter Desktop, Python AI",
+      "description": "Cross-platform desktop app for sports event management using offline AI facial/BIB recognition.",
+      "nda": false
+    },
+    {
+      "id": "magiq-community-engagement",
+      "category": "production",
+      "title": "Community Engagement - MAGIQ Software",
+      "tech": "Xamarin, C#",
+      "description": "Multi-tenant SaaS civic engagement platform for local councils across Australia and New Zealand. Features include geo-tagged infrastructure incident reporting, push notification alerts, and community news feed. Contributed to iOS build pipeline and cross-platform deployment in a production enterprise environment. **Available on iOS & Android**.",
+      "nda": false
+    },
+    {
+      "id": "fixme",
+      "category": "production",
+      "title": "FixME",
+      "tech": "Flutter, Golang",
+      "description": "Service-booking platform for home services. Advanced Google Maps integration, VNPay/MoMo payment gateways, Fastlane CI/CD pipelines. Custom Dart scripts for test automation. **Deployed on iOS & Android**.",
+      "nda": false
+    },
+    {
+      "id": "premind",
+      "category": "production",
+      "title": "Pre:MIND",
+      "tech": "Flutter, Django",
+      "description": "Restaurant booking app with custom iBeacon implementation. Deep native iOS/Android intervention, peripheral device connectivity. Dart automation tools for device testing. **Deployed on iOS & Android**.",
+      "nda": false
+    },
+    {
+      "id": "galaxy-pynt",
+      "category": "production",
+      "title": "Galaxy Pynt",
+      "tech": "Flutter, NestJS",
+      "description": "Escape room booking platform with VNPay integration. Custom bash deployment automation using App Store Connect API and Firebase CLI. **Nearing deployment**.",
+      "nda": false
+    },
+    {
+      "id": "nlcs-sancro",
+      "category": "production",
+      "title": "NLCS - Sancro",
+      "tech": "SwiftUI",
+      "description": "Student verification app with ClearPass API integration. Apple School Manager deployment. Python automation for bulk provisioning. **Production use**.",
+      "nda": false
+    },
+    {
+      "id": "simap",
+      "category": "production",
+      "title": "Simap",
+      "tech": "Kotlin, Jetpack Compose, Java",
+      "description": "Native Android app for IoT device management. MVVM architecture, high-speed barcode/NFC scanning. Kotlin automation scripts for device simulation. **Internal production use**.",
+      "nda": false
+    },
+    {
+      "id": "yuragi-plus",
+      "category": "production",
+      "title": "Yuragi+",
+      "tech": "React Native",
+      "description": "Music streaming application with ad integration. **Deployed on iOS & Android**.",
+      "nda": true
+    },
+    {
+      "id": "pte-tiens-innoviera",
+      "category": "production",
+      "title": "PTE & Tiens - Innoviera",
+      "tech": "React Native",
+      "description": "Insurance and MLM cross-platform applications. **Successfully deployed**.",
+      "nda": false
+    },
+    {
+      "id": "immoshoot-crawler",
+      "category": "backend_automation",
+      "title": "Immoshoot Crawler",
+      "tech": "Kotlin, Spring Boot, Apache Camel",
+      "description": "High-volume data crawling service. Dockerized, deployed on AWS with MySQL. Daily cron jobs for automated reporting via Slack webhooks. Kotlin CLI tools for monitoring.",
+      "nda": false
+    }
+  ],
+  "achievements": [
+    "**Fullstack Freelance Success (2024-Present)**: Delivering diverse projects including AI-powered desktop tools, luxury web platforms, and premium mobile redesigns.",
+    "**AI/ML Integration Expert**: Successfully integrated ChatGPT, Claude, and Gemini APIs into production applications, enhancing user experiences with intelligent features. Developed offline AI pipelines for computer vision tasks.",
+    "**Mobile Team Leadership (2022-2024)**: Led 8-developer team, improving productivity and code quality through mentorship and standardized practices.",
+    "**Automation Champion**: Developed comprehensive automation toolkit using 7+ programming languages, reducing repetitive tasks by 60% and deployment time by 70%.",
+    "**Full-Stack Architecture**: Successfully re-architected mobile team's project structure, enabling rapid feature development and easier onboarding.",
+    "**DevOps Excellence**: Implemented CI/CD pipelines, Docker containerization, and AWS deployment automation across multiple projects.",
+    "**Deployed 9+ Mobile & Web Applications**: Shipped production apps across Flutter, React, Xamarin, and Native platforms with complex integrations.",
+    "**Multi-Technology Proficiency**: Demonstrated expertise across mobile (Flutter, React Native, Kotlin, SwiftUI) and full-stack web (React, Next.js, FastAPI, NestJS, Golang)."
+  ],
+  "additional_info": [
+    {
+      "label": "Current Focus",
+      "content": "Full-stack web development, AI/ML integration, DevOps automation, and SaaS product development"
+    },
+    {
+      "label": "Passionate about",
+      "content": "Building intelligent, user-centric applications; exploring emerging AI/ML technologies; creating developer productivity tools"
+    },
+    {
+      "label": "Strong problem-solver",
+      "content": "Proven ability to deliver complex projects under tight deadlines with high-quality standards"
+    },
+    {
+      "label": "Effective communicator",
+      "content": "Experienced in leading cross-functional teams and translating technical concepts for non-technical stakeholders"
+    },
+    {
+      "label": "Continuous learner",
+      "content": "Actively exploring new frameworks, AI capabilities, and automation techniques to enhance development workflows"
+    },
+    {
+      "label": "Design awareness",
+      "content": "Basic brand identity design skills for holistic product development"
+    },
+    {
+      "label": "Open to",
+      "content": "Full-time opportunities, contract work, and interesting freelance projects in full-stack development, AI integration, or technical leadership roles"
+    }
+  ]
+}
