@@ -17,6 +17,7 @@ The most professional way to view my profiles is through the interactive portal:
 - **Android Specialist Resume**: [Live Link](https://hvanw.github.io/portfolio/profiles/android/)
 - **Full Portfolio Version**: [Live Link](https://hvanw.github.io/portfolio/profiles/full-portfolio/)
 - **Xamarin Developer**: [Live Link](https://hvanw.github.io/portfolio/profiles/xamarin/)
+- **Software Engineering Instructor & Mentor**: [Live Link](https://hvanw.github.io/portfolio/profiles/teaching/)
 
 ## Source Documents
 

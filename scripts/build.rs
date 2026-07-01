@@ -162,6 +162,10 @@ struct ProfileKey {
     title: String,
     seo: Seo,
     sections: Vec<String>,
+    /// Overrides profile.summary when set, for profiles that need a different
+    /// narrative (e.g. a teaching-focused pitch) instead of the general one.
+    #[serde(default)]
+    summary: Option<Vec<String>>,
 }
 
 #[derive(Debug, Deserialize, Clone)]
@@ -475,9 +479,9 @@ fn render_education(education: &[Education]) -> String {
     format!("\n                <section id=\"education\" class=\"animate-in\">\n                    <h2>Education</h2>{items}\n                </section>")
 }
 
-fn render_section(id: &str, profile: &Profile) -> String {
+fn render_section(id: &str, profile: &Profile, key: &ProfileKey) -> String {
     match id {
-        "summary" => render_summary(&profile.summary),
+        "summary" => render_summary(key.summary.as_ref().unwrap_or(&profile.summary)),
         "skills" => render_skills(&profile.skills),
         "experience" => render_experience(&profile.experience),
         "ai_automation_expertise" => render_ai_automation(&profile.ai_automation_expertise),
@@ -495,7 +499,7 @@ fn render_section(id: &str, profile: &Profile) -> String {
 fn build_page(profile: &Profile, key: &ProfileKey, template: &str) -> String {
     let header = render_header(&profile.person, &key.title);
     let nav = render_navigation(&key.sections);
-    let sections: String = key.sections.iter().map(|id| render_section(id, profile)).collect();
+    let sections: String = key.sections.iter().map(|id| render_section(id, profile, key)).collect();
 
     let content = format!(
         "{header}\n\n            <!-- Main Content -->\n            <div class=\"content\">{sections}\n            </div>\n\n            <!-- Footer -->\n            <footer class=\"footer\">\n                <p>Last updated: {}</p>\n                <p>© 2026 {}. All rights reserved.</p>\n            </footer>",
