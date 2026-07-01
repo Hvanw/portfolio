@@ -256,7 +256,7 @@ projects:
     nda: true
   - id: yuragi-plus
     category: production
-    title: "Yuragi+"
+    title: "Confidential Music Streaming App"
     tech: "React Native"
     description: "Music streaming application with ad integration. **Deployed on iOS & Android**."
     nda: true
