@@ -452,6 +452,21 @@ h3 {
     transition: color var(--transition-normal);
 }
 
+.project-link {
+    margin-top: 12px;
+    font-size: 13px;
+}
+
+.project-link a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.project-link a:hover {
+    text-decoration: underline;
+}
+
 /* Education */
 .education-item {
     margin-bottom: 20px;

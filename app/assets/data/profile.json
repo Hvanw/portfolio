@@ -1,7 +1,7 @@
 {
   "meta": {
     "canonical_url": "https://hvanw.github.io",
-    "last_updated": "2026-05"
+    "last_updated": "2026-07"
   },
   "person": {
     "name": "Văn Minh Huy",
@@ -186,8 +186,9 @@
           "heading": "Key Projects & Deliverables",
           "bullets": [
             "**Sport Seeker (AI & Mobile Desktop)**: Developed a Flutter Desktop application (macOS/Windows) for offline sports photo/video analysis. Integrated a Python FastAPI backend with an AI pipeline (InsightFace, PaddleOCR) for facial and BIB number recognition. Implemented modular packaging and cross-platform deployment.",
-            "**The Poet Residence (Quiet Luxury Web)**: Engineered the official high-end real estate website using React, TypeScript, and Tailwind CSS. Focused on \"Quiet Luxury\" aesthetic and refined UI/UX with shadcn/ui. Optimized for performance and seamless deployment on Vercel.",
+            "**The Poet Residence (Quiet Luxury Web Platform)**: Engineered the official website for The Poet Residence using React, TypeScript, Tailwind CSS and shadcn/ui, with a refined \"Quiet Luxury\" aesthetic. Now expanding into a shared-backend, multi-site platform for Phúc Thanh An Group (CRM, booking, payments, resident services) across a monorepo of apps deployed on Vercel with Supabase and Cloudflare R2. Live at [thepoetresidence.vn](https://thepoetresidence.vn).",
             "**Confidential Apartment Management App (Mobile UI/UX)**: Led the comprehensive UI/UX redesign of a Flutter-based enterprise app. Achieved a premium, high-density layout satisfying stakeholders' \"no wasted space\" requirement. Designed complex flows for billing, bulletin feeds with reactions, and fee comparison analytics.",
+            "**Nevio (AI Automation Agent)**: QA and requirements analysis for an n8n/LangChain-based conversational AI agent (OpenAI LLM, Postgres-backed memory) automating client outreach across email, SMS and CRM data sync. Diagnosed failing QA scenarios and proposed workflow/code fixes.",
             "Design and develop **full-stack web applications** using React/Next.js frontend and FastAPI/NestJS/Golang backends",
             "Build and deploy **SaaS applications** with scalable architectures, RESTful APIs, and database design",
             "Integrate **AI/LLM capabilities** (ChatGPT, Claude, Gemini APIs) into client applications for intelligent features",
@@ -314,7 +315,8 @@
       "title": "Confidential Apartment Management App",
       "tech": "Flutter",
       "description": "High-density premium UI redesign for an enterprise apartment management system. Integrated complex billing analytics and interactive community bulletins.",
-      "nda": true
+      "nda": true,
+      "link": null
     },
     {
       "id": "sport-seeker",
@@ -322,7 +324,17 @@
       "title": "Sport Seeker",
       "tech": "Flutter Desktop, Python AI",
       "description": "Cross-platform desktop app for sports event management using offline AI facial/BIB recognition.",
-      "nda": false
+      "nda": false,
+      "link": null
+    },
+    {
+      "id": "nevio-ai-agent",
+      "category": "highlighted",
+      "title": "Nevio",
+      "tech": "n8n, LangChain, OpenAI, PostgreSQL, Twilio, SendGrid",
+      "description": "QA and requirements analysis for a conversational AI automation agent built on n8n and LangChain (OpenAI LLM, Postgres-backed memory), handling client outreach across email, SMS and CRM data sync. Diagnosed failing QA scenarios and proposed workflow/code fixes.",
+      "nda": false,
+      "link": null
     },
     {
       "id": "magiq-community-engagement",
@@ -330,7 +342,8 @@
       "title": "Community Engagement - MAGIQ Software",
       "tech": "Xamarin, C#",
       "description": "Multi-tenant SaaS civic engagement platform for local councils across Australia and New Zealand. Features include geo-tagged infrastructure incident reporting, push notification alerts, and community news feed. Contributed to iOS build pipeline and cross-platform deployment in a production enterprise environment. **Available on iOS & Android**.",
-      "nda": false
+      "nda": false,
+      "link": null
     },
     {
       "id": "fixme",
@@ -338,7 +351,8 @@
       "title": "FixME",
       "tech": "Flutter, Golang",
       "description": "Service-booking platform for home services. Advanced Google Maps integration, VNPay/MoMo payment gateways, Fastlane CI/CD pipelines. Custom Dart scripts for test automation. **Deployed on iOS & Android**.",
-      "nda": false
+      "nda": false,
+      "link": null
     },
     {
       "id": "premind",
@@ -346,7 +360,8 @@
       "title": "Pre:MIND",
       "tech": "Flutter, Django",
       "description": "Restaurant booking app with custom iBeacon implementation. Deep native iOS/Android intervention, peripheral device connectivity. Dart automation tools for device testing. **Deployed on iOS & Android**.",
-      "nda": false
+      "nda": false,
+      "link": null
     },
     {
       "id": "galaxy-pynt",
@@ -354,7 +369,8 @@
       "title": "Galaxy Pynt",
       "tech": "Flutter, NestJS",
       "description": "Escape room booking platform with VNPay integration. Custom bash deployment automation using App Store Connect API and Firebase CLI. **Nearing deployment**.",
-      "nda": false
+      "nda": false,
+      "link": null
     },
     {
       "id": "nlcs-sancro",
@@ -362,7 +378,8 @@
       "title": "NLCS - Sancro",
       "tech": "SwiftUI",
       "description": "Student verification app with ClearPass API integration. Apple School Manager deployment. Python automation for bulk provisioning. **Production use**.",
-      "nda": false
+      "nda": false,
+      "link": null
     },
     {
       "id": "simap",
@@ -370,7 +387,8 @@
       "title": "Simap",
       "tech": "Kotlin, Jetpack Compose, Java",
       "description": "Native Android app for IoT device management. MVVM architecture, high-speed barcode/NFC scanning. Kotlin automation scripts for device simulation. **Internal production use**.",
-      "nda": false
+      "nda": false,
+      "link": null
     },
     {
       "id": "yuragi-plus",
@@ -378,7 +396,8 @@
       "title": "Yuragi+",
       "tech": "React Native",
       "description": "Music streaming application with ad integration. **Deployed on iOS & Android**.",
-      "nda": true
+      "nda": true,
+      "link": null
     },
     {
       "id": "pte-tiens-innoviera",
@@ -386,7 +405,8 @@
       "title": "PTE & Tiens - Innoviera",
       "tech": "React Native",
       "description": "Insurance and MLM cross-platform applications. **Successfully deployed**.",
-      "nda": false
+      "nda": false,
+      "link": null
     },
     {
       "id": "immoshoot-crawler",
@@ -394,7 +414,8 @@
       "title": "Immoshoot Crawler",
       "tech": "Kotlin, Spring Boot, Apache Camel",
       "description": "High-volume data crawling service. Dockerized, deployed on AWS with MySQL. Daily cron jobs for automated reporting via Slack webhooks. Kotlin CLI tools for monitoring.",
-      "nda": false
+      "nda": false,
+      "link": null
     }
   ],
   "achievements": [

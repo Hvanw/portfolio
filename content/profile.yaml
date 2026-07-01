@@ -4,7 +4,7 @@
 
 meta:
   canonical_url: "https://hvanw.github.io"
-  last_updated: "2026-05"
+  last_updated: "2026-07"
 
 person:
   name: "Văn Minh Huy"
@@ -116,8 +116,9 @@ experience:
       - heading: "Key Projects & Deliverables"
         bullets:
           - "**Sport Seeker (AI & Mobile Desktop)**: Developed a Flutter Desktop application (macOS/Windows) for offline sports photo/video analysis. Integrated a Python FastAPI backend with an AI pipeline (InsightFace, PaddleOCR) for facial and BIB number recognition. Implemented modular packaging and cross-platform deployment."
-          - "**The Poet Residence (Quiet Luxury Web)**: Engineered the official high-end real estate website using React, TypeScript, and Tailwind CSS. Focused on \"Quiet Luxury\" aesthetic and refined UI/UX with shadcn/ui. Optimized for performance and seamless deployment on Vercel."
+          - "**The Poet Residence (Quiet Luxury Web Platform)**: Engineered the official website for The Poet Residence using React, TypeScript, Tailwind CSS and shadcn/ui, with a refined \"Quiet Luxury\" aesthetic. Now expanding into a shared-backend, multi-site platform for Phúc Thanh An Group (CRM, booking, payments, resident services) across a monorepo of apps deployed on Vercel with Supabase and Cloudflare R2. Live at [thepoetresidence.vn](https://thepoetresidence.vn)."
           - "**Confidential Apartment Management App (Mobile UI/UX)**: Led the comprehensive UI/UX redesign of a Flutter-based enterprise app. Achieved a premium, high-density layout satisfying stakeholders' \"no wasted space\" requirement. Designed complex flows for billing, bulletin feeds with reactions, and fee comparison analytics."
+          - "**Nevio (AI Automation Agent)**: QA and requirements analysis for an n8n/LangChain-based conversational AI agent (OpenAI LLM, Postgres-backed memory) automating client outreach across email, SMS and CRM data sync. Diagnosed failing QA scenarios and proposed workflow/code fixes."
           - "Design and develop **full-stack web applications** using React/Next.js frontend and FastAPI/NestJS/Golang backends"
           - "Build and deploy **SaaS applications** with scalable architectures, RESTful APIs, and database design"
           - "Integrate **AI/LLM capabilities** (ChatGPT, Claude, Gemini APIs) into client applications for intelligent features"
@@ -210,6 +211,12 @@ projects:
     title: "Sport Seeker"
     tech: "Flutter Desktop, Python AI"
     description: "Cross-platform desktop app for sports event management using offline AI facial/BIB recognition."
+    nda: false
+  - id: nevio-ai-agent
+    category: highlighted
+    title: "Nevio"
+    tech: "n8n, LangChain, OpenAI, PostgreSQL, Twilio, SendGrid"
+    description: "QA and requirements analysis for a conversational AI automation agent built on n8n and LangChain (OpenAI LLM, Postgres-backed memory), handling client outreach across email, SMS and CRM data sync. Diagnosed failing QA scenarios and proposed workflow/code fixes."
     nda: false
   - id: magiq-community-engagement
     category: production

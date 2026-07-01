@@ -103,6 +103,8 @@ struct Project {
     tech: String,
     description: String,
     nda: bool,
+    #[serde(default)]
+    link: Option<String>,
 }
 
 #[derive(Debug, Deserialize, Serialize, Clone)]
@@ -165,6 +167,35 @@ fn render_inline(text: &str) -> String {
             out.push_str(if bold { "</strong>" } else { "<strong>" });
             bold = !bold;
             continue;
+        }
+        if c == '[' {
+            let mut lookahead = chars.clone();
+            let mut label = String::new();
+            let mut closed_bracket = false;
+            for lc in lookahead.by_ref() {
+                if lc == ']' {
+                    closed_bracket = true;
+                    break;
+                }
+                label.push(lc);
+            }
+            if closed_bracket && lookahead.peek() == Some(&'(') {
+                lookahead.next();
+                let mut url = String::new();
+                let mut closed_paren = false;
+                for uc in lookahead.by_ref() {
+                    if uc == ')' {
+                        closed_paren = true;
+                        break;
+                    }
+                    url.push(uc);
+                }
+                if closed_paren {
+                    out.push_str(&format!("<a href=\"{url}\" target=\"_blank\" rel=\"noopener\">{label}</a>"));
+                    chars = lookahead;
+                    continue;
+                }
+            }
         }
         match c {
             '&' => out.push_str("&amp;"),
@@ -368,8 +399,15 @@ fn render_project_card(project: &Project) -> String {
     };
     let nda_class = if project.nda { " nda-project" } else { "" };
 
+    let link_html = match &project.link {
+        Some(link) if !project.nda => format!(
+            "\n                            <div class=\"project-link\"><a href=\"{link}\" target=\"_blank\" rel=\"noopener\">🔗 Visit site</a></div>"
+        ),
+        _ => String::new(),
+    };
+
     format!(
-        "\n                        <div class=\"project-card{nda_class}\">\n                            <div class=\"project-title\">{}{nda_badge}</div>\n                            <div class=\"project-tech\">{}</div>\n                            <div class=\"project-description\">\n                                {}\n                            </div>\n                        </div>",
+        "\n                        <div class=\"project-card{nda_class}\">\n                            <div class=\"project-title\">{}{nda_badge}</div>\n                            <div class=\"project-tech\">{}</div>\n                            <div class=\"project-description\">\n                                {}\n                            </div>{link_html}\n                        </div>",
         project.title, project.tech, render_inline(&project.description)
     )
 }
