@@ -481,7 +481,7 @@ fn build_page(profile: &Profile, key: &ProfileKey, template: &str) -> String {
     let sections: String = key.sections.iter().map(|id| render_section(id, profile)).collect();
 
     let content = format!(
-        "{header}\n\n            <!-- Main Content -->\n            <div class=\"content\">{sections}\n            </div>\n\n            <!-- Footer -->\n            <footer class=\"footer\">\n                <p>Last updated: {} | <a href=\"complete-profile.md\" style=\"color: var(--primary-color);\">View complete profile (Markdown)</a></p>\n                <p>© 2026 {}. All rights reserved.</p>\n            </footer>",
+        "{header}\n\n            <!-- Main Content -->\n            <div class=\"content\">{sections}\n            </div>\n\n            <!-- Footer -->\n            <footer class=\"footer\">\n                <p>Last updated: {}</p>\n                <p>© 2026 {}. All rights reserved.</p>\n            </footer>",
         profile.meta.last_updated, profile.person.name
     );
 

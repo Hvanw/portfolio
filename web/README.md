@@ -1,27 +1,27 @@
 # Professional Profiles Portfolio
 
-This repository contains my professional profiles and resumes, dynamically generated from a single source of truth (`complete-profile.md`) using custom metadata for different roles and specializations.
+This directory contains my professional profiles and resumes, dynamically generated from a single source of truth (`content/profile.yaml` + `content/keymap.yaml` at the repo root) via `scripts/build.rs`.
 
 ## 🚀 Live Portfolio Portal
 The most professional way to view my profiles is through the interactive portal:
-**[https://hvanw.github.io/dotfiles/](https://hvanw.github.io/dotfiles/)**
+**[https://hvanw.github.io/portfolio/](https://hvanw.github.io/portfolio/)**
 
 ---
 
 ## Direct Profile Links
 
-- **Mobile Developer (100% Match Optimized)**: [Live Link](https://hvanw.github.io/dotfiles/profiles/mobile/)
-- **AI & Automation Specialist**: [Live Link](https://hvanw.github.io/dotfiles/profiles/ai-automation/)
-- **Standard Professional Resume**: [Live Link](https://hvanw.github.io/dotfiles/profiles/standard/)
-- **iOS Specialist Resume**: [Live Link](https://hvanw.github.io/dotfiles/profiles/ios/)
-- **Android Specialist Resume**: [Live Link](https://hvanw.github.io/dotfiles/profiles/android/)
-- **Full Portfolio Version**: [Live Link](https://hvanw.github.io/dotfiles/profiles/full-portfolio/)
-- **Xamarin Developer**: [Live Link](https://hvanw.github.io/dotfiles/profiles/xamarin/)
+- **Mobile Developer (100% Match Optimized)**: [Live Link](https://hvanw.github.io/portfolio/profiles/mobile/)
+- **AI & Automation Specialist**: [Live Link](https://hvanw.github.io/portfolio/profiles/ai-automation/)
+- **Standard Professional Resume**: [Live Link](https://hvanw.github.io/portfolio/profiles/standard/)
+- **iOS Specialist Resume**: [Live Link](https://hvanw.github.io/portfolio/profiles/ios/)
+- **Android Specialist Resume**: [Live Link](https://hvanw.github.io/portfolio/profiles/android/)
+- **Full Portfolio Version**: [Live Link](https://hvanw.github.io/portfolio/profiles/full-portfolio/)
+- **Xamarin Developer**: [Live Link](https://hvanw.github.io/portfolio/profiles/xamarin/)
 
 ## Source Documents
 
-- **Master Content**: [complete-profile.md](./complete-profile.md)
-- **Metadata Definitions**: [profiles/](./profiles/)
+- **Data**: [../content/profile.yaml](../content/profile.yaml)
+- **Per-profile config**: [../content/keymap.yaml](../content/keymap.yaml)
+- **Build script**: [../scripts/build.rs](../scripts/build.rs)
 
----
-*For technical documentation on the build system, please refer to [docs/Automated Profile HTML Generation.md](./docs/%20Automated%20Profile%20HTML%20Generation.md)*
+Deployment is automated via `.github/workflows/deploy-pages.yml` on push to `main`.

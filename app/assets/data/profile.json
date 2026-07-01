@@ -366,28 +366,28 @@
     {
       "id": "galaxy-pynt",
       "category": "production",
-      "title": "Galaxy Pynt",
+      "title": "Confidential Escape Room Booking Platform",
       "tech": "Flutter, NestJS",
       "description": "Escape room booking platform with VNPay integration. Custom bash deployment automation using App Store Connect API and Firebase CLI. **Nearing deployment**.",
-      "nda": false,
+      "nda": true,
       "link": null
     },
     {
       "id": "nlcs-sancro",
       "category": "production",
-      "title": "NLCS - Sancro",
+      "title": "Confidential Student Verification App",
       "tech": "SwiftUI",
-      "description": "Student verification app with ClearPass API integration. Apple School Manager deployment. Python automation for bulk provisioning. **Production use**.",
-      "nda": false,
+      "description": "Student verification app with ClearPass API integration. Apple School Manager deployment (private enterprise distribution, not public App Store). Python automation for bulk provisioning. **Production use**.",
+      "nda": true,
       "link": null
     },
     {
       "id": "simap",
       "category": "production",
-      "title": "Simap",
+      "title": "Confidential IoT Device Management App",
       "tech": "Kotlin, Jetpack Compose, Java",
       "description": "Native Android app for IoT device management. MVVM architecture, high-speed barcode/NFC scanning. Kotlin automation scripts for device simulation. **Internal production use**.",
-      "nda": false,
+      "nda": true,
       "link": null
     },
     {
@@ -411,10 +411,10 @@
     {
       "id": "immoshoot-crawler",
       "category": "backend_automation",
-      "title": "Immoshoot Crawler",
+      "title": "Confidential Data Crawling Service",
       "tech": "Kotlin, Spring Boot, Apache Camel",
       "description": "High-volume data crawling service. Dockerized, deployed on AWS with MySQL. Daily cron jobs for automated reporting via Slack webhooks. Kotlin CLI tools for monitoring.",
-      "nda": false,
+      "nda": true,
       "link": null
     }
   ],
