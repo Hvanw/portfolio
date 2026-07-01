@@ -339,28 +339,28 @@
     {
       "id": "magiq-community-engagement",
       "category": "production",
-      "title": "Community Engagement - MAGIQ Software",
+      "title": "Confidential Civic Engagement Platform",
       "tech": "Xamarin, C#",
       "description": "Multi-tenant SaaS civic engagement platform for local councils across Australia and New Zealand. Features include geo-tagged infrastructure incident reporting, push notification alerts, and community news feed. Contributed to iOS build pipeline and cross-platform deployment in a production enterprise environment. **Available on iOS & Android**.",
-      "nda": false,
+      "nda": true,
       "link": null
     },
     {
       "id": "fixme",
       "category": "production",
-      "title": "FixME",
+      "title": "Confidential Home Services Booking App",
       "tech": "Flutter, Golang",
       "description": "Service-booking platform for home services. Advanced Google Maps integration, VNPay/MoMo payment gateways, Fastlane CI/CD pipelines. Custom Dart scripts for test automation. **Deployed on iOS & Android**.",
-      "nda": false,
+      "nda": true,
       "link": null
     },
     {
       "id": "premind",
       "category": "production",
-      "title": "Pre:MIND",
+      "title": "Confidential Restaurant Booking App",
       "tech": "Flutter, Django",
       "description": "Restaurant booking app with custom iBeacon implementation. Deep native iOS/Android intervention, peripheral device connectivity. Dart automation tools for device testing. **Deployed on iOS & Android**.",
-      "nda": false,
+      "nda": true,
       "link": null
     },
     {
@@ -402,10 +402,10 @@
     {
       "id": "pte-tiens-innoviera",
       "category": "production",
-      "title": "PTE & Tiens - Innoviera",
+      "title": "Confidential Insurance & MLM Applications",
       "tech": "React Native",
       "description": "Insurance and MLM cross-platform applications. **Successfully deployed**.",
-      "nda": false,
+      "nda": true,
       "link": null
     },
     {
