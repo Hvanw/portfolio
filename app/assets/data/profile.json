@@ -416,6 +416,33 @@
       "description": "High-volume data crawling service. Dockerized, deployed on AWS with MySQL. Daily cron jobs for automated reporting via Slack webhooks. Kotlin CLI tools for monitoring.",
       "nda": true,
       "link": null
+    },
+    {
+      "id": "hishoo",
+      "category": "highlighted",
+      "title": "Confidential Footwear E-commerce Platform",
+      "tech": "WordPress, WooCommerce",
+      "description": "E-commerce website for a footwear retailer. WooCommerce storefront with integrated MoMo payment gateway.",
+      "nda": true,
+      "link": null
+    },
+    {
+      "id": "euderm",
+      "category": "highlighted",
+      "title": "Confidential Skincare E-commerce Website",
+      "tech": "WordPress, WooCommerce",
+      "description": "E-commerce catalog site distributing European skincare brands. Product browsing funnels to Zalo/Facebook for consultation instead of online checkout.",
+      "nda": true,
+      "link": null
+    },
+    {
+      "id": "nhadat-nguyen-minh",
+      "category": "highlighted",
+      "title": "Confidential Real Estate Listing Website",
+      "tech": "WordPress",
+      "description": "Real estate listing website for the Bình Hưng Hòa area, covering rentals, sales, and boarding rooms.",
+      "nda": true,
+      "link": null
     }
   ],
   "achievements": [

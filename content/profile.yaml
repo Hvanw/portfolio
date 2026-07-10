@@ -282,6 +282,30 @@ projects:
     tech: "Kotlin, Spring Boot, Apache Camel"
     description: "High-volume data crawling service. Dockerized, deployed on AWS with MySQL. Daily cron jobs for automated reporting via Slack webhooks. Kotlin CLI tools for monitoring."
     nda: true
+  - id: hishoo
+    category: highlighted
+    title: "Hishoo"
+    alter_title: "Confidential Footwear E-commerce Platform"
+    tech: "WordPress, WooCommerce"
+    description: "E-commerce website for a footwear retailer. WooCommerce storefront with integrated MoMo payment gateway."
+    nda: true
+    link: "https://hishoo.vn"
+  - id: euderm
+    category: highlighted
+    title: "Euderm"
+    alter_title: "Confidential Skincare E-commerce Website"
+    tech: "WordPress, WooCommerce"
+    description: "E-commerce catalog site distributing European skincare brands. Product browsing funnels to Zalo/Facebook for consultation instead of online checkout."
+    nda: true
+    link: "https://euderm.store"
+  - id: nhadat-nguyen-minh
+    category: highlighted
+    title: "Nhà Đất Nguyễn Minh"
+    alter_title: "Confidential Real Estate Listing Website"
+    tech: "WordPress"
+    description: "Real estate listing website for the Bình Hưng Hòa area, covering rentals, sales, and boarding rooms."
+    nda: true
+    link: "https://nhadatnguyenminh.com"
 
 achievements:
   - "**Fullstack Freelance Success (2024-Present)**: Delivering diverse projects including AI-powered desktop tools, luxury web platforms, and premium mobile redesigns."

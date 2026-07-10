@@ -567,6 +567,9 @@ fn main() {
     for p in &mut public_profile.projects {
         p.title = p.display_title().to_string();
         p.alter_title = None;
+        if p.nda {
+            p.link = None;
+        }
     }
     let json = serde_json::to_string_pretty(&public_profile).expect("serialize profile.yaml sang JSON thất bại");
     fs::write(json_dir.join("profile.json"), json).expect("ghi app/assets/data/profile.json thất bại");
