@@ -443,6 +443,15 @@
       "description": "Real estate listing website for the Bình Hưng Hòa area, covering rentals, sales, and boarding rooms.",
       "nda": true,
       "link": null
+    },
+    {
+      "id": "legacy-game-server-migration",
+      "category": "highlighted",
+      "title": "Legacy Multiplayer Game Server VPS Migration",
+      "tech": "Linux, VM Disk Image Analysis (qemu-nbd/libguestfs), Systems Migration",
+      "description": "Migrated a legacy self-hosted multiplayer game server from a VM-based deployment to a native Linux VPS. Extracted and repackaged the core application layer directly from a VM disk image, bypassing the original virtualization dependency, and resolved legacy binary/library compatibility issues for a modern hosting environment.",
+      "nda": true,
+      "link": null
     }
   ],
   "achievements": [
