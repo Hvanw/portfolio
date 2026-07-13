@@ -83,6 +83,14 @@ skills:
         content: "AWS (EC2, S3, Lambda, RDS), Firebase"
       - label: "Automation"
         content: "Bash scripting, Python automation, Dart scripts, deployment automation"
+  - id: systems_re
+    title: "Systems Analysis & Reverse Engineering"
+    icon: "🔍"
+    items:
+      - label: "Protocol & Behavior Analysis"
+        content: "Differential testing against reference implementations, capturing and documenting runtime/network protocols from observed behavior when source or documentation is unavailable"
+      - label: "Legacy System Recovery"
+        content: "VM disk image analysis (qemu-nbd/libguestfs), binary/library compatibility resolution, extracting application layers from undocumented legacy deployments"
   - id: tools
     title: "Tools & Technologies"
     icon: "🛠️"
@@ -313,6 +321,13 @@ projects:
     tech: "Linux, VM Disk Image Analysis (qemu-nbd/libguestfs), Systems Migration"
     description: "Migrated a legacy self-hosted multiplayer game server from a VM-based deployment to a native Linux VPS. Extracted and repackaged the core application layer directly from a VM disk image, bypassing the original virtualization dependency, and resolved legacy binary/library compatibility issues for a modern hosting environment."
     nda: true
+  - id: arlix-ai-os
+    category: highlighted
+    title: "ARLIX — Personal AI Assistant OS" # dự án cá nhân đang phát triển, source tại /Volumes/core/codebase
+    alter_title: "ARLIX — Personal AI Assistant OS"
+    tech: "Rust, Flutter, Dart, Ollama, Claude API, Unix Socket/HTTP IPC"
+    description: "Ongoing personal project (since June 2026): a local-first, persistent AI daemon running 24/7, serving both a Rust TUI and Flutter GUI over Unix socket/HTTP. Includes a Codex CLI parity research program — capturing and differentially analyzing OpenAI Codex's runtime behavior (streaming event protocol, session/thread lifecycle, tool-call semantics) against ARLIX's own implementation, backed by an evidence-based capability matrix and resource/memory profiling methodology."
+    nda: false
 
 achievements:
   - "**Fullstack Freelance Success (2024-Present)**: Delivering diverse projects including AI-powered desktop tools, luxury web platforms, and premium mobile redesigns."
@@ -338,4 +353,4 @@ additional_info:
   - label: "Design awareness"
     content: "Basic brand identity design skills for holistic product development"
   - label: "Open to"
-    content: "Full-time opportunities, contract work, and interesting freelance projects in full-stack development, AI integration, or technical leadership roles"
+    content: "Full-time opportunities, contract work, and interesting freelance projects in full-stack development, AI integration, or technical leadership roles, and systems/protocol reverse-engineering work (game backends, legacy system recovery, CLI/agent tooling parity)"
