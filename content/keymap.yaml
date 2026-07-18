@@ -45,7 +45,7 @@ profiles:
   - id: standard
     title: "Senior Mobile Developer | Team Lead"
     seo:
-      description: "Văn Minh Huy - Senior Mobile Developer and Team Lead with 3.5+ years of experience."
+      description: "Văn Minh Huy - Senior Mobile Developer and Team Lead with 2.5+ years of experience."
       keywords: "Mobile Developer, Team Lead, Flutter, React Native, Senior Engineer"
       author: "Văn Minh Huy"
     sections: [summary, skills, experience, projects, achievements, education]
@@ -69,10 +69,10 @@ profiles:
   - id: teaching
     title: "Software Engineering Instructor & Mentor | Fullstack, Mobile & AI"
     seo:
-      description: "Văn Minh Huy - Software engineering instructor and mentor, bringing 4+ years of fullstack development and 3.5 years leading an 8-person engineering team into the classroom."
+      description: "Văn Minh Huy - Software engineering instructor and mentor, bringing 4+ years of fullstack development and 2.5 years leading an 8-person engineering team into the classroom."
       keywords: "Software Engineering Instructor, Technical Mentor, Coding Bootcamp Instructor, Programming Teacher, Fullstack Engineer, Engineering Team Lead"
       author: "Văn Minh Huy"
     summary:
-      - "After 4+ years as a fullstack software engineer and 3.5 years leading an 8-person mobile engineering team, I'm moving toward technical teaching and mentorship. The developer job market has grown intensely competitive as AI reshapes how software gets built, and I see teaching as the right response: it gives me dedicated time to go deeper into AI, a structured way to pass on real production experience — architecture, DevOps, code quality, team leadership — to the next generation of engineers, and a discipline that forces me to keep revisiting and sharpening my own software engineering fundamentals."
+      - "After 4+ years as a fullstack software engineer and 2.5 years leading an 8-person mobile engineering team, I'm moving toward technical teaching and mentorship. The developer job market has grown intensely competitive as AI reshapes how software gets built, and I see teaching as the right response: it gives me dedicated time to go deeper into AI, a structured way to pass on real production experience — architecture, DevOps, code quality, team leadership — to the next generation of engineers, and a discipline that forces me to keep revisiting and sharpening my own software engineering fundamentals."
       - "My background spans mobile (Flutter, React Native, Kotlin, SwiftUI), full-stack web (React/Next.js, FastAPI, NestJS, Golang), and hands-on AI/LLM integration, with direct experience mentoring a team through code review, architecture decisions, and delivery under real deadlines — the same skills that translate into teaching engineers who can actually ship."
     sections: [summary, experience, skills, projects, achievements, education]
