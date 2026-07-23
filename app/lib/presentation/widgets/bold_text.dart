@@ -11,11 +11,15 @@ class BoldText extends StatelessWidget {
     super.key,
     this.style,
     this.boldStyle,
+    this.maxLines,
+    this.overflow,
   });
 
   final String data;
   final TextStyle? style;
   final TextStyle? boldStyle;
+  final int? maxLines;
+  final TextOverflow? overflow;
 
   static final _pattern = RegExp(r'\*\*(.+?)\*\*|\[([^\]]+)\]\(([^)]+)\)');
 
@@ -54,6 +58,10 @@ class BoldText extends StatelessWidget {
       spans.add(TextSpan(text: data.substring(cursor)));
     }
 
-    return Text.rich(TextSpan(style: baseStyle, children: spans));
+    return Text.rich(
+      TextSpan(style: baseStyle, children: spans),
+      maxLines: maxLines,
+      overflow: overflow ?? TextOverflow.clip,
+    );
   }
 }

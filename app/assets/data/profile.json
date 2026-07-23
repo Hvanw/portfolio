@@ -200,7 +200,7 @@
         {
           "heading": "Key Projects & Deliverables",
           "bullets": [
-            "**Sport Seeker (AI & Mobile Desktop)**: Developed a Flutter Desktop application (macOS/Windows) for offline sports photo/video analysis. Integrated a Python FastAPI backend with an AI pipeline (InsightFace, PaddleOCR) for facial and BIB number recognition. Implemented modular packaging and cross-platform deployment.",
+            "**SportSeeker (AI & Mobile Desktop)**: Developed a Flutter Desktop application (macOS/Windows) for offline sports photo/video analysis. Integrated a Python FastAPI backend with an AI pipeline (InsightFace, PaddleOCR) for facial and BIB number recognition. Implemented modular packaging and cross-platform deployment.",
             "**The Poet Residence (Quiet Luxury Web Platform + Brand Identity)**: Engineered the official website for The Poet Residence using React, TypeScript, Tailwind CSS and shadcn/ui, with a refined \"Quiet Luxury\" aesthetic. Also led the visual brand identity: extended the client-provided logo into additional variants, defined the color palette and typography system, illustrated a hero keyvisual plus two supporting keyvisuals, and produced a full brand guidelines book (Photoshop, Illustrator, InDesign). Now expanding into a shared-backend, multi-site platform for Phúc Thanh An Group (CRM, booking, payments, resident services) across a monorepo of apps deployed on Vercel with Supabase and Cloudflare R2. Live at [thepoetresidence.vn](https://thepoetresidence.vn).",
             "**Goal Card PRO (iOS Goal-Tracking App)**: Built and shipped a personal goal-tracking iOS app end-to-end — Flutter codebase with native Swift bridging for notification categories/action handlers (Snooze, Check Goal) and APNs entitlements. Migrated static content to Firebase Firestore, integrated Firebase Cloud Messaging for push notifications. Owned the full App Store Connect submission pipeline, resolved two review rejections (Guideline 2.1, 2.3.3) with corrected demo evidence and Age Rating metadata, and debugged production-only push/notification-action bugs post-launch. Live at [Goal Card PRO](https://apps.apple.com/us/app/goal-card-pro/id6787720496).",
             "**Confidential Apartment Management App (Mobile UI/UX)**: Led the comprehensive UI/UX redesign of a Flutter-based enterprise app. Achieved a premium, high-density layout satisfying stakeholders' \"no wasted space\" requirement. Designed complex flows for billing, bulletin feeds with reactions, and fee comparison analytics.",
@@ -345,11 +345,15 @@
     {
       "id": "sport-seeker",
       "category": "highlighted",
-      "title": "Sport Seeker",
+      "title": "SportSeeker",
       "tech": "Flutter Desktop, Python AI",
       "description": "Cross-platform desktop app for sports event management using offline AI facial/BIB recognition.",
       "nda": false,
-      "link": null
+      "link": null,
+      "role": "Sole freelance developer for the client (AIBus) — designed and built the full stack end-to-end: Flutter Desktop frontend, Python FastAPI + AI backend, and the cross-platform packaging/release pipeline.",
+      "problem": "Sports event organizers needed to find one athlete's photos/videos inside large post-event media dumps by face and BIB (race number) — offline, since personal photos couldn't be uploaded to the cloud. Real workflow constraints included re-using an already-processed index across machines via portable external drives, and resuming multi-hour video scans without losing progress.",
+      "approach": "Flutter Desktop (macOS Apple Silicon + Windows) launches a Python FastAPI + AI backend as a local subprocess (InsightFace for faces, PaddleOCR/RapidOCR for BIB-number OCR, FAISS for vector search) over local HTTP/WebSocket. The hardest problem was packaging: a PyTorch/PaddlePaddle memory-allocator conflict was crashing the app on Apple Silicon, fixed by replacing that step with a custom pure-NumPy implementation — which also cut roughly 2.5GB (Windows) / 500MB (macOS) off the bundled app size. Windows needed a separate OCR engine (RapidOCR) since the macOS-built PaddleOCR models used incompatible ops.",
+      "result": "Shipped and iterated through multiple releases (latest v1.0.15, build 63) over about 2.5 months of active development. All 6 customer-requested features (pause/resume, portable-drive re-indexing, advanced search, etc.) and every QA-found bug were closed. Mid-project the client renamed the product; the codebase still credits \"Powered By AIBUS\"."
     },
     {
       "id": "goal-card-pro",
@@ -358,16 +362,24 @@
       "tech": "Flutter, Swift (iOS Native), Firebase",
       "description": "Personal goal-tracking iOS app with alarm/reminder notifications. Built native Swift notification handling (categories, action buttons, APNs) alongside the Flutter codebase, migrated static content to Firestore, and owned the full App Store Connect submission and review-rejection resolution end-to-end.",
       "nda": false,
-      "link": "https://apps.apple.com/us/app/goal-card-pro/id6787720496"
+      "link": "https://apps.apple.com/us/app/goal-card-pro/id6787720496",
+      "role": "Owned the app end-to-end for the client: Flutter/Swift code, App Store Connect submission, App Review resolution, post-launch bugfixes, and direct client communication.",
+      "problem": "Client asked to get an existing personal goal-tracking/alarm concept onto the iOS App Store.",
+      "approach": "Adapted the codebase from the open-source Flutter app \"Chrono\" (a clock/alarm/timer app), rebranding it and adding native Swift bridging for notification categories and action buttons (Snooze, Check Goal) with proper APNs entitlements, plus migrating static content to Firebase Firestore.",
+      "result": "First submission (build 42) was rejected on Guideline 2.1 (insufficient demo evidence) and 2.3.3 (Age Rating metadata mismatch). Fixed by adding a real device demo video and correcting the App Privacy/Age Rating configuration; resubmitted as build 44 and approved within two days. Now live on the App Store, with a v1.0.1 post-launch bugfix release approved on the first try. Delivered scope grew from an initial 600.000đ quote to 1.450.000đ, paid."
     },
     {
       "id": "nevio-ai-agent",
       "category": "highlighted",
       "title": "Nevio",
       "tech": "n8n, LangChain, OpenAI, PostgreSQL, Twilio, SendGrid",
-      "description": "QA and requirements analysis for a conversational AI automation agent built on n8n and LangChain (OpenAI LLM, Postgres-backed memory), handling client outreach across email, SMS and CRM data sync. Diagnosed failing QA scenarios and proposed workflow/code fixes.",
+      "description": "QA for a conversational AI automation agent built on n8n and LangChain (OpenAI LLM, Postgres-backed memory), handling client outreach across email, SMS and CRM data sync. Diagnosed a failing execution and fixed it through n8n configuration, proposing the solution to the team in meetings and demos.",
       "nda": false,
-      "link": null
+      "link": null,
+      "role": "QA — verified the client's existing AI agent workflow (\"Louis\", built for real-estate CRM client Le Club), reproduced and diagnosed a failing execution, fixed it via n8n configuration rather than application code, and proposed the fix to the team in meetings and demos.",
+      "problem": "The client's n8n/LangChain conversational agent, handling outreach across email/SMS/CRM channels, was failing during a database-lookup step of its workflow.",
+      "approach": "Manually ran the workflow in n8n and traced the execution node-by-node until it failed with a missing-credential error. Rather than editing the agent's conversational logic, built a small tool that regenerates the correct credential configuration from environment variables — the change was made through n8n's own JSON import/export of workflow configuration, not hand-written application code.",
+      "result": "The failing execution was fixed and the workflow ran successfully again; the diagnostic tooling also turned the client's ad-hoc n8n setup into a reproducible local test environment."
     },
     {
       "id": "magiq-community-engagement",
@@ -502,7 +514,11 @@
       "tech": "Rust, Flutter, Dart, Ollama, Claude API, Unix Socket/HTTP IPC",
       "description": "Ongoing personal project (since June 2026): a local-first, persistent AI daemon running 24/7, serving both a Rust TUI and Flutter GUI over Unix socket/HTTP. Includes a Codex CLI parity research program — capturing and differentially analyzing OpenAI Codex's runtime behavior (streaming event protocol, session/thread lifecycle, tool-call semantics) against ARLIX's own implementation, backed by an evidence-based capability matrix and resource/memory profiling methodology.",
       "nda": false,
-      "link": null
+      "link": null,
+      "role": "Sole creator and maintainer — personal project, ongoing since June 2026.",
+      "problem": "Existing AI assistant options force a trade-off: cloud assistants (ChatGPT/Claude/Gemini) require internet and send data off-device, IDE-locked dev tools (Cursor, Continue.dev) only work inside one editor, and local-model tools (LM Studio, Jan.ai) are GUI-only and not programmable. Wanted a persistent, local, programmable AI daemon that multiple clients (a TUI and a GUI) could share.",
+      "approach": "A Rust backend daemon serves both HTTP and a Unix socket simultaneously, with a Rust TUI and a Flutter GUI as two independent frontends sharing one backend. Mid-2026 the project deliberately paused new features to instead reproduce OpenAI Codex CLI's runtime behavior at a protocol level — including running live, non-mocked local-model inference with memory/swap profiling as a gating requirement before any model is accepted.",
+      "result": "32/32 backend tests and 25/25 TUI tests passing; a 29-item capability matrix classifying ARLIX against Codex CLI (1 equivalent, 10 different, 8 missing, 10 blocked by environment). As of the latest checkpoint, work is blocked pending authorization to download a replacement local model after the current one was rejected for excessive swap usage during testing."
     }
   ],
   "achievements": [

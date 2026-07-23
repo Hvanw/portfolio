@@ -107,6 +107,19 @@ struct Project {
     nda: bool,
     #[serde(default)]
     link: Option<String>,
+    // Case-study fields: only ever set for the small set of non-NDA projects
+    // deep enough to show as a full portfolio case study (see
+    // validate_case_study_fields below for the build-time guard).
+    #[serde(default, skip_serializing_if = "Option::is_none")]
+    role: Option<String>,
+    #[serde(default, skip_serializing_if = "Option::is_none")]
+    problem: Option<String>,
+    #[serde(default, skip_serializing_if = "Option::is_none")]
+    approach: Option<String>,
+    #[serde(default, skip_serializing_if = "Option::is_none")]
+    result: Option<String>,
+    #[serde(default, skip_serializing_if = "Vec::is_empty")]
+    gallery: Vec<String>,
 }
 
 impl Project {
@@ -120,6 +133,24 @@ impl Project {
                 .unwrap_or_else(|| panic!("project '{}' has nda: true but no alter_title set", self.id))
         } else {
             &self.title
+        }
+    }
+
+    /// NDA projects must stay compact (title/tech/description only) — the
+    /// deep case-study fields (role/problem/approach/result/gallery) are
+    /// reserved for non-NDA projects, since they'd otherwise describe a
+    /// confidential project's process/results in public-facing output.
+    fn validate_case_study_fields(&self) {
+        let has_case_study = self.role.is_some()
+            || self.problem.is_some()
+            || self.approach.is_some()
+            || self.result.is_some()
+            || !self.gallery.is_empty();
+        if self.nda && has_case_study {
+            panic!(
+                "project '{}' has nda: true but also has case-study fields (role/problem/approach/result/gallery) set — NDA projects must stay compact",
+                self.id
+            );
         }
     }
 }
@@ -533,6 +564,10 @@ fn main() {
         &fs::read_to_string("content/keymap.yaml").expect("không đọc được content/keymap.yaml"),
     )
     .expect("content/keymap.yaml không đúng schema");
+
+    for p in &profile.projects {
+        p.validate_case_study_fields();
+    }
 
     let template = fs::read_to_string("web/template.html").expect("không đọc được web/template.html");
 

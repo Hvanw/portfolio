@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:portfolio/data/models/project.dart';
 import 'package:portfolio/presentation/portrait/project_detail_page.dart';
 import 'package:portfolio/presentation/portrait/technical_stack_widget.dart';
+import 'package:portfolio/presentation/widgets/bold_text.dart';
 
 class ProjectTile extends StatelessWidget {
   final Project project;
@@ -40,7 +41,7 @@ class ProjectTile extends StatelessWidget {
                 ),
                 const SizedBox(height: 6),
                 Expanded(
-                  child: Text(
+                  child: BoldText(
                     project.description,
                     maxLines: 4,
                     overflow: TextOverflow.ellipsis,
@@ -49,6 +50,16 @@ class ProjectTile extends StatelessWidget {
                 ),
                 const SizedBox(height: 8),
                 TechChipList(project.techChips),
+                if (project.hasCaseStudy) ...[
+                  const SizedBox(height: 8),
+                  Row(
+                    children: [
+                      Icon(Icons.auto_stories_outlined, size: 13, color: colorScheme.primary),
+                      const SizedBox(width: 4),
+                      Text('Case study', style: TextStyle(fontSize: 11, fontWeight: FontWeight.w600, color: colorScheme.primary)),
+                    ],
+                  ),
+                ],
               ],
             ),
           ),
